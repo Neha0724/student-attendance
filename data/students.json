@@ -26,5 +26,12 @@
     "name": "Aniket",
     "class": "7th",
     "division": "C"
+  },
+  {
+    "id": 10,
+    "rollNo": "5",
+    "name": "Nikita",
+    "class": "2nd",
+    "division": "C"
   }
 ]
