@@ -3,14 +3,28 @@
     "id": 6,
     "rollNo": "1",
     "name": "Ayush",
-    "class": "TYBA",
+    "class": "2nd",
     "division": "A"
   },
   {
     "id": 7,
     "rollNo": "2",
     "name": "Neha",
-    "class": "FYBA",
+    "class": "4th",
     "division": "B"
+  },
+  {
+    "id": 8,
+    "rollNo": "3",
+    "name": "Chetna",
+    "class": "5th",
+    "division": "A"
+  },
+  {
+    "id": 9,
+    "rollNo": "4",
+    "name": "Aniket",
+    "class": "7th",
+    "division": "C"
   }
 ]
