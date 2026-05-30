@@ -1,0 +1,16 @@
+[
+  {
+    "id": 6,
+    "rollNo": "1",
+    "name": "Ayush",
+    "class": "TYBA",
+    "division": "A"
+  },
+  {
+    "id": 7,
+    "rollNo": "2",
+    "name": "Neha",
+    "class": "FYBA",
+    "division": "B"
+  }
+]
