@@ -1,7 +1,3 @@
-// ============================================================
-// attendance.js - Attendance marking and editing operations
-// ============================================================
-
 let allStudents = [];
 let todayAttendance = []; // Attendance records matching selected date
 

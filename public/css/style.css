@@ -1,12 +1,7 @@
-/* ============================================================
-   style.css - Student Attendance Management System
-   Modern dark theme with glass morphism & micro-animations
-   ============================================================ */
-
-/* --- Google Fonts --- */
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap');
 
-/* --- CSS Variables (Design Tokens) --- */
+/*CSS Variables*/
 :root {
   --bg-dark: #0f1117;
   --bg-card: rgba(255, 255, 255, 0.04);
@@ -42,7 +37,7 @@
   --transition: all 0.2s ease;
 }
 
-/* --- Reset & Base --- */
+/*Reset & Base*/
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { font-size: 16px; scroll-behavior: smooth; }
@@ -56,9 +51,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ============================================================
-   SIDEBAR
-   ============================================================ */
+/*SIDEBAR*/
 .sidebar {
   width: var(--sidebar-width);
   background: var(--bg-sidebar);
@@ -157,9 +150,7 @@ body {
   text-align: center;
 }
 
-/* ============================================================
-   MAIN CONTENT
-   ============================================================ */
+/*MAIN CONTENT*/
 .main-content {
   margin-left: var(--sidebar-width);
   flex: 1;
@@ -219,9 +210,7 @@ body {
   flex: 1;
 }
 
-/* ============================================================
-   STAT CARDS (Dashboard)
-   ============================================================ */
+/*STAT CARDS (Dashboard)*/
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -280,9 +269,7 @@ body {
   font-weight: 500;
 }
 
-/* ============================================================
-   GLASS CARDS
-   ============================================================ */
+/*GLASS CARDS*/
 .card {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -307,9 +294,7 @@ body {
   color: var(--text-primary);
 }
 
-/* ============================================================
-   BUTTONS
-   ============================================================ */
+/*BUTTONS*/
 .btn {
   display: inline-flex;
   align-items: center;
@@ -376,9 +361,7 @@ body {
 .btn-sm { padding: 5px 12px; font-size: 0.78rem; }
 .btn-lg { padding: 12px 24px; font-size: 0.95rem; }
 
-/* ============================================================
-   FORMS
-   ============================================================ */
+/*FORMS*/
 .form-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -424,9 +407,7 @@ select.form-control option {
   color: var(--text-primary);
 }
 
-/* ============================================================
-   TABLE
-   ============================================================ */
+/* TABLE */
 .table-wrapper {
   overflow-x: auto;
   border-radius: var(--radius-sm);
@@ -472,9 +453,7 @@ tbody td {
 
 .td-muted { color: var(--text-secondary); font-size: 0.82rem; }
 
-/* ============================================================
-   BADGES
-   ============================================================ */
+/*BADGES*/
 .badge {
   display: inline-flex;
   align-items: center;
@@ -506,9 +485,7 @@ tbody td {
   transition: width 0.6s ease;
 }
 
-/* ============================================================
-   MODAL
-   ============================================================ */
+/*MODAL*/
 .modal-overlay {
   display: none;
   position: fixed;
@@ -568,9 +545,7 @@ tbody td {
 .modal-body { padding: 20px 24px; }
 .modal-footer { padding: 0 24px 20px; display: flex; gap: 10px; justify-content: flex-end; }
 
-/* ============================================================
-   TOAST NOTIFICATIONS
-   ============================================================ */
+/*TOAST NOTIFICATIONS */
 .toast-container {
   position: fixed;
   bottom: 24px;
@@ -618,9 +593,7 @@ tbody td {
 
 .toast.fade-out { animation: toastOut 0.3s ease forwards; }
 
-/* ============================================================
-   SEARCH BOX
-   ============================================================ */
+/*SEARCH BOX*/
 .search-box {
   position: relative;
 }
@@ -639,9 +612,7 @@ tbody td {
   pointer-events: none;
 }
 
-/* ============================================================
-   ATTENDANCE STUDENT ROW
-   ============================================================ */
+/*ATTENDANCE STUDENT ROW*/
 .attendance-row {
   display: flex;
   align-items: center;
@@ -696,9 +667,7 @@ tbody td {
 
 .radio-btn:hover { border-color: var(--border-hover); }
 
-/* ============================================================
-   EMPTY STATE
-   ============================================================ */
+/*EMPTY STATE*/
 .empty-state {
   text-align: center;
   padding: 48px 20px;
@@ -708,18 +677,14 @@ tbody td {
 .empty-state .empty-icon { font-size: 2.5rem; margin-bottom: 12px; }
 .empty-state p { font-size: 0.9rem; }
 
-/* ============================================================
-   SECTION DIVIDER
-   ============================================================ */
+/*SECTION DIVIDER*/
 .section-divider {
   height: 1px;
   background: var(--border);
   margin: 24px 0;
 }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
+/*RESPONSIVE*/
 @media (max-width: 768px) {
   .sidebar {
     transform: translateX(-100%);
@@ -750,9 +715,7 @@ tbody td {
   .radio-group { flex-wrap: wrap; }
 }
 
-/* ============================================================
-   SIDEBAR OVERLAY (mobile)
-   ============================================================ */
+/*SIDEBAR OVERLAY (mobile)*/
 .sidebar-overlay {
   display: none;
   position: fixed;
@@ -763,9 +726,7 @@ tbody td {
 
 .sidebar-overlay.open { display: block; }
 
-/* ============================================================
-   UTILITY
-   ============================================================ */
+/*UTILITY*/
 .text-success { color: var(--success); }
 .text-danger { color: var(--danger); }
 .text-warning { color: var(--warning); }
@@ -783,9 +744,7 @@ tbody td {
 .fw-bold { font-weight: 700; }
 .hidden { display: none !important; }
 
-/* ============================================================
-   LOADING SPINNER
-   ============================================================ */
+/*LOADING SPINNER*/
 .spinner {
   width: 32px; height: 32px;
   border: 3px solid var(--border);
@@ -797,9 +756,7 @@ tbody td {
 
 @keyframes spin { to { transform: rotate(360deg); } }
 
-/* ============================================================
-   REPORTS SPECIFIC
-   ============================================================ */
+/*REPORTS SPECIFIC*/
 .report-filters {
   display: flex;
   gap: 12px;
@@ -831,9 +788,7 @@ tbody td {
 .pct-mid { color: var(--warning); }
 .pct-low { color: var(--danger); }
 
-/* ============================================================
-   CONFIRM DIALOG
-   ============================================================ */
+/*CONFIRM DIALOG*/
 .confirm-overlay {
   display: none;
   position: fixed;

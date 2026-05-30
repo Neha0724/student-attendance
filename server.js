@@ -1,6 +1,4 @@
-// ============================================================
 // server.js - Student Attendance Management System Backend
-// ============================================================
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
@@ -16,10 +14,7 @@ const ATTENDANCE_FILE = path.join(__dirname, 'data', 'attendance.json');
 app.use(express.json()); // Parse incoming JSON bodies
 app.use(express.static(path.join(__dirname, 'public'))); // Serve static files
 
-// ============================================================
 // Helper Functions
-// ============================================================
-
 // Read a JSON file and return the parsed data
 function readData(filePath) {
   try {
@@ -41,10 +36,7 @@ function nextId(arr) {
   return Math.max(...arr.map(item => item.id)) + 1;
 }
 
-// ============================================================
 // STUDENT ROUTES
-// ============================================================
-
 // GET /api/students - Get all students (optional search query)
 app.get('/api/students', (req, res) => {
   let students = readData(STUDENTS_FILE);
@@ -128,10 +120,8 @@ app.delete('/api/students/:id', (req, res) => {
   res.json({ message: 'Student deleted successfully.' });
 });
 
-// ============================================================
-// ATTENDANCE ROUTES
-// ============================================================
 
+// ATTENDANCE ROUTES
 // GET /api/attendance - Get all attendance records (optional date filter)
 app.get('/api/attendance', (req, res) => {
   let attendance = readData(ATTENDANCE_FILE);
@@ -191,10 +181,7 @@ app.put('/api/attendance/:id', (req, res) => {
   res.json(attendance[idx]);
 });
 
-// ============================================================
 // REPORTS ROUTE
-// ============================================================
-
 // GET /api/reports - Generate attendance reports
 app.get('/api/reports', (req, res) => {
   const students = readData(STUDENTS_FILE);
@@ -249,9 +236,8 @@ app.get('/api/reports', (req, res) => {
   });
 });
 
-// ============================================================
+
 // Start Server
-// ============================================================
 app.listen(PORT, () => {
   console.log(`✅ Server running at http://localhost:${PORT}`);
   console.log(`   Press Ctrl+C to stop.`);

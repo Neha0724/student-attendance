@@ -1,7 +1,3 @@
-// ============================================================
-// reports.js - Client-side parsing and reporting dashboard
-// ============================================================
-
 let reportsData = null; // cached report response
 
 document.addEventListener('DOMContentLoaded', fetchReports);

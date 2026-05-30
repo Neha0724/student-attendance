@@ -1,7 +1,3 @@
-// ============================================================
-// common.js - Shared utilities for all pages
-// ============================================================
-
 // --- Mark active navigation link based on current page ---
 function setActiveNav() {
   const page = window.location.pathname.split('/').pop() || 'index.html';

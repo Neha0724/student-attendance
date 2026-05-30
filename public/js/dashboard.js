@@ -1,7 +1,3 @@
-// ============================================================
-// dashboard.js - Fetch and render dashboard statistics
-// ============================================================
-
 const today = todayStr(); // from common.js
 
 // Load all dashboard data when page is ready

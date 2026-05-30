@@ -1,7 +1,3 @@
-// ============================================================
-// students.js - Client-side student CRUD logic
-// ============================================================
-
 let allStudents = [];
 
 // Load students on start
